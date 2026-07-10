@@ -96,8 +96,10 @@ export default function App() {
             />
 
             <div className="card-title">
-              <h2 className="card-title__en">FACE</h2>
-              <h2 className="card-title__zh">輪廓光影</h2>
+              <h2 className="card-title__en">
+              FA<span>C</span><span>E</span>
+              </h2>
+              <h2 className="card-title__zh">輪廓<span>光</span><span>影</span></h2>
             </div>
 
             <div className="card-overlay">
@@ -130,8 +132,8 @@ export default function App() {
             />
 
             <div className="card-title">
-              <h2 className="card-title__en">SKIN</h2>
-              <h2 className="card-title__zh">原生微光</h2>
+              <h2 className="card-title__en"><span>S</span><span>K</span>IN</h2>
+              <h2 className="card-title__zh"><span>原</span><span>生</span>微光</h2>
             </div>
 
             <div className="card-overlay">
@@ -165,8 +167,8 @@ export default function App() {
             />
 
             <div className="card-title">
-              <h2 className="card-title__en">BODY</h2>
-              <h2 className="card-title__zh">線條塑型</h2>
+              <h2 className="card-title__en">BO<span>D</span><span>Y</span></h2>
+              <h2 className="card-title__zh">線條<span>塑</span><span>型</span></h2>
             </div>
 
             <div className="card-overlay">
