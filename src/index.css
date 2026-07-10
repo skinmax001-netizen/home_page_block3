@@ -1,0 +1,177 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+.page {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 720px;
+  max-width: 100%;
+  position: relative;
+  cursor: default;
+  height: 360px;
+}
+
+.card-img {
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+  width: 360px;
+  height: 360px;
+}
+.card-img--left { left: 0; }
+.card-img--right { right: 0; }
+
+/* ── Title ── */
+.card-title {
+  position: absolute;
+  width: 445px;
+  text-align: center;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  left: 152px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.card-title__en {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 96px;
+  font-weight: normal;
+  line-height: 1;
+  color: #ffffff;
+  letter-spacing: 0.3em;
+}
+.card-title__zh {
+  font-size: 36px;
+  line-height: 1;
+  color: #ffffff;
+  letter-spacing: 0.7em;
+}
+
+/* ── Overlay (purple) ── */
+.card-overlay {
+  position: absolute;
+  width: 445px;
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-overlay__en {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 96px;
+  font-weight: normal;
+  line-height: 1;
+  color: #7C64A1;
+  text-align: center;
+  letter-spacing: 0.3em;
+}
+.card-overlay__zh {
+  font-size: 36px;
+  line-height: 1;
+  color: #7C64A1;
+  text-align: center;
+  letter-spacing: 0.7em;
+}
+
+/* ── Treatment list ── */
+.card-treatments {
+  position: absolute;
+  list-style: none;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  transform: translate(-50%, -50%);
+}
+.card-treatments li { 
+  font-size: 16px;
+  line-height: 2.4;
+  opacity: 0;
+  visibility: hidden;
+  /* transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); */
+  transition: all 0.4s ease-in-out 0s, visibility 0s;
+  text-align: center;
+  background-color: rgba(152, 131, 185, 0.5);
+  border-radius: 30px;
+  box-shadow: 0.71px 0.71px 24px rgba(152, 131, 185, 0.33);
+  color: #43276C;
+  cursor: pointer;
+}
+.card-treatments li:hover { background-color: rgb(152, 131, 185); }
+
+/* ─── Hover: show treatments, hide overlay ─── */
+.card:hover .card-treatments li,
+.card:focus-within .card-treatments li {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card:hover .card-overlay,
+.card:focus-within .card-overlay {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* ══════ Section 1: FACE ══════ */
+.card--face .card-overlay { left: 246px; top: 50%; transform: translateY(-50%); }
+.card--face:hover .card-title,
+.card--face:focus-within .card-title { transform: translate(-170px, -50%); }
+.card--face:hover .card-overlay,
+.card--face:focus-within .card-overlay { transform: translate(-198px, -50%); }
+
+.card--face .card-treatments { left: 75%; }
+.card--face .card-treatments li { width: 257px; letter-spacing: 0.5em; }
+.card--face .card-treatments li:nth-child(1) { margin-bottom: 16px; }
+.card--face .card-treatments li:nth-child(2) { margin-bottom: 16px; }
+.card--face .card-treatments li:nth-child(3) { margin-bottom: 16px; }
+.card--face .card-treatments li:nth-child(4) { margin-bottom: 16px; }
+
+/* ══════ Section 2: SKIN ══════ */
+
+.card--skin .card-overlay { left: 48px; top: 50%; transform: translateY(-50%); }
+.card--skin:hover .card-title,
+.card--skin:focus-within .card-title { transform: translate(201px, -50%); }
+.card--skin:hover .card-overlay,
+.card--skin:focus-within .card-overlay { transform: translate(201px, -50%); }
+
+.card--skin .card-treatments { left: 25%; }
+.card--skin .card-treatments li { width: 297px; letter-spacing: 0.5em; }
+.card--skin .card-treatments li:nth-child(1) { margin-bottom: 16px; }
+.card--skin .card-treatments li:nth-child(2) { margin-bottom: 16px; }
+.card--skin .card-treatments li:nth-child(3) { margin-bottom: 16px; }
+.card--skin .card-treatments li:nth-child(4) { margin-bottom: 16px; }
+.card--skin .card-treatments li:nth-child(5) { margin-bottom: 16px; letter-spacing: 0.15em; }
+.card--skin .card-treatments li:nth-child(6) { letter-spacing: 0.15em; }
+
+/* ══════ Section 3: BODY ══════ */
+.card--body .card-overlay { left: 246px; top: 50%; transform: translateY(-50%); }
+.card--body:hover .card-title,
+.card--body:focus-within .card-title { transform: translate(-170px, -50%); }
+.card--body:hover .card-overlay,
+.card--body:focus-within .card-overlay { transform: translate(-198px, -50%); }
+
+.card--body .card-treatments { left: 75%; }
+.card--body .card-treatments li { width: 292px; letter-spacing: 0.2em; }
+.card--body .card-treatments li:nth-child(1) { margin-bottom: 16px; }
+.card--body .card-treatments li:nth-child(2) { margin-bottom: 16px; letter-spacing: 0em; }
+.card--body .card-treatments li:nth-child(3) { margin-bottom: 16px; }
+
+
+
+
