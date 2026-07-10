@@ -21,11 +21,8 @@ function CardWrapper({ children, height }: CardWrapperProps) {
     const handleResize = () => {
       if (!containerRef.current) return;
       const containerWidth = containerRef.current.getBoundingClientRect().width;
-      if (containerWidth < 720) {
-        setScale(containerWidth / 720);
-      } else {
-        setScale(1);
-      }
+      const targetWidth = Math.min(containerWidth, 1920);
+      setScale(targetWidth / 720);
     };
 
     // Initial calculation
