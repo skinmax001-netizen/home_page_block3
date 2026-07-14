@@ -3,7 +3,7 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
   color: #000000;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .page {
