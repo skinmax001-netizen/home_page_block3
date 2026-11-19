@@ -105,11 +105,26 @@ export default function App() {
             </div>
 
             <ul className="card-treatments">
-              <li>逆時線雕拉提</li>
-              <li>膠原賦活再生</li>
-              <li>深層營養水光</li>
-              <li>輪廓光影微雕</li>
-              <li>動態撫紋精緻V臉</li>
+              <li>
+                <a href="https://skinmax001.wixsite.com/skinmax/picos蜂巢皮秒激光" target="_top">
+                  PICO S 蜂巢皮秒激光
+                </a>
+              </li>
+              <li>
+                <a href="https://skinmax001.wixsite.com/skinmax/副本-hifu-智能緊膚360-全面拉提" target="_top">
+                  膠原電眼槍
+                </a>
+              </li>
+              <li>
+                <a href="https://skinmax001.wixsite.com/skinmax/零毛孔嫩肌槍" target="_top">
+                  零毛孔嫩肌槍
+                </a>
+              </li>
+              <li>
+                <a href="https://skinmax001.wixsite.com/skinmax/5dactuallift橡筋線" target="_top">
+                  5D Actual Lift橡筋線
+                </a>
+              </li>
             </ul>
           </div>
         </CardWrapper>
@@ -139,12 +154,31 @@ export default function App() {
             </div>
 
             <ul className="card-treatments">
-              <li>PICO S 蜂巢皮秒激光</li>
-              <li>HIFU 逆齡緊緻療程</li>
-              <li>膠原電眼槍</li>
-              <li>零毛孔嫩肌槍</li>
-              <li>5D Actual Lift 橡筋線</li>
-              <li>Aqua Peel毛孔吸塵機</li>
+              <li>
+                <a href="https://skinmax001.wixsite.com/skinmax/極肽肌源修復療程" target="_top">
+                  極肽肌源修復療程
+                </a>
+              </li>
+              <li>
+                <a href="https://skinmax001.wixsite.com/skinmax/韓系雙星裸光肌療程" target="_top">
+                  韓系雙星裸光肌療程
+                </a>
+              </li>
+              <li>
+                <a href="https://skinmax001.wixsite.com/skinmax/黑鑽再生波liftup筋膜肌" target="_top">
+                  黑鑽再生波Lift Up筋膜肌
+                </a>
+              </li>
+              <li>
+                <a href="https://skinmax001.wixsite.com/skinmax/venusviva醫學級撫平肌膚療程" target="_top">
+                  Venus Viva 醫學級撫平肌膚療程
+                </a>
+              </li>
+              <li>
+                <a href="https://skinmax001.wixsite.com/skinmax/醫學激光脫疣" target="_top">
+                  醫學脫疣
+                </a>
+              </li>
             </ul>
           </div>
         </CardWrapper>
@@ -174,10 +208,21 @@ export default function App() {
             </div>
 
             <ul className="card-treatments">
-              <li>西班牙醫學級冷凍溶脂</li>
-              <li>Venus Freeze 磁力脈衝緊膚塑形療程</li>
-              <li>BioCell 變頻負壓修身溶脂</li>
-              <li>養護美胸療程</li>
+              <li>
+                <a href="https://skinmax001.wixsite.com/skinmax/副本-aqua-peel-毛孔吸塵機" target="_top">
+                  Lanluis 英國皇室女性內分泌系統調理
+                </a>
+              </li>
+              <li>
+                <a href="https://skinmax001.wixsite.com/skinmax/k-wave標靶微波溶脂" target="_top">
+                  K-Wave 標靶微波溶脂
+                </a>
+              </li>
+              <li>
+                <a href="https://skinmax001.wixsite.com/skinmax/養護美胸療程" target="_top">
+                  丘比特神話胸療程
+                </a>
+              </li>
             </ul>
           </div>
         </CardWrapper>

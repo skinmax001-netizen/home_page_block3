@@ -120,6 +120,13 @@ body {
   cursor: pointer;
 }
 .card-treatments li:hover { background-color: rgb(152, 131, 185); }
+.card-treatments li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
 
 /* ─── Hover: show treatments, hide overlay ─── */
 .card:hover .card-treatments li,
@@ -144,11 +151,11 @@ body {
 .card--face:focus-within .card-overlay { transform: translate(-198px, -50%); }
 
 .card--face .card-treatments { left: 75%; }
-.card--face .card-treatments li { width: 257px; letter-spacing: 0.5em; }
+.card--face .card-treatments li { width: 297px; letter-spacing: 0.5em; }
 .card--face .card-treatments li:nth-child(1) { margin-bottom: 16px; }
 .card--face .card-treatments li:nth-child(2) { margin-bottom: 16px; }
 .card--face .card-treatments li:nth-child(3) { margin-bottom: 16px; }
-.card--face .card-treatments li:nth-child(4) { margin-bottom: 16px; }
+.card--face .card-treatments li:nth-child(4) { letter-spacing: 0.15em; }
 
 /* ══════ Section 2: SKIN ══════ */
 
@@ -164,10 +171,8 @@ body {
 .card--skin .card-treatments li { width: 297px; letter-spacing: 0.5em; }
 .card--skin .card-treatments li:nth-child(1) { margin-bottom: 16px; }
 .card--skin .card-treatments li:nth-child(2) { margin-bottom: 16px; }
-.card--skin .card-treatments li:nth-child(3) { margin-bottom: 16px; }
-.card--skin .card-treatments li:nth-child(4) { margin-bottom: 16px; }
-.card--skin .card-treatments li:nth-child(5) { margin-bottom: 16px; letter-spacing: 0.15em; }
-.card--skin .card-treatments li:nth-child(6) { letter-spacing: 0.15em; }
+.card--skin .card-treatments li:nth-child(3) { margin-bottom: 16px; letter-spacing: 0.15em; }
+.card--skin .card-treatments li:nth-child(4) { margin-bottom: 16px; letter-spacing: 0.05em; }
 
 /* ══════ Section 3: BODY ══════ */
 .card--body .card-overlay { left: 246px; top: 50%; transform: translateY(-50%); }
@@ -179,7 +184,6 @@ body {
 .card--body:focus-within .card-overlay { transform: translate(-198px, -50%); }
 
 .card--body .card-treatments { left: 75%; }
-.card--body .card-treatments li { width: 292px; letter-spacing: 0.2em; }
-.card--body .card-treatments li:nth-child(1) { margin-bottom: 16px; }
-.card--body .card-treatments li:nth-child(2) { margin-bottom: 16px; letter-spacing: 0em; }
-.card--body .card-treatments li:nth-child(3) { margin-bottom: 16px; }
+.card--body .card-treatments li { width: 297px; letter-spacing: 0.2em; }
+.card--body .card-treatments li:nth-child(1) { margin-bottom: 16px; letter-spacing: 0em; }
+.card--body .card-treatments li:nth-child(2) { margin-bottom: 16px; }
